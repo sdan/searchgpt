@@ -14,12 +14,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function SearchPage() {
 
-    function formatText(text) {
+    function formatText(text: any) {
         if (!text) {
           return null;
         }
         const lines = text.split("\n");
-        return lines.map((line, index) => <p key={index}>{line}</p>);
+        return lines.map((line: any, index: any) => <p key={index}>{line}</p>);
       }
 
 
@@ -28,7 +28,7 @@ export default function SearchPage() {
   const [results, setResults] = useState(null)
 
   const [isLoading, setIsLoading] = useState<boolean>(false)
-  const [error, setError] = useState<string>(null)
+  const [error, setError] = useState<any>(null)
 
   const search = async (q: string) => {
     setIsLoading(true)
