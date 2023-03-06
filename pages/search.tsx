@@ -75,10 +75,10 @@ export default function SearchPage() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>
+          {/* <p>
             Get started by adding&nbsp;
             <code className={styles.code}>searchgpt.xyz/?q=%s</code> to your browser's search bar. 
-          </p>
+          </p> */}
 
           <div>
             <p>Search query: {router.query.q}</p>
