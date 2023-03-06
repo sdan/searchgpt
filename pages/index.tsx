@@ -18,7 +18,7 @@ export default function Home() {
         <div className={styles.description}>
           <p>
             Get started by adding&nbsp;
-            <code className={styles.code}>https://searchgpt.vercel.app/?q=%s</code> as a custom search engine in your browser. 
+            <code className={styles.code}>https://searchgpt.vercel.app/search?q=%s</code> as a custom search engine in your browser. 
           </p>
 
         </div>
