@@ -81,9 +81,14 @@ export default function SearchPage() {
           </p> */}
 
           <div>
-            <p>Search query: {router.query.q}</p>
+          <p>
+            <b>Search query: {router.query.q}</b>
+          </p>
+
           {isLoading ? (
-            <div>Loading...</div>
+            <p>
+           Loading...
+          </p>
           ) : (
  
             <div style={{ whiteSpace: "pre-wrap" }}>
