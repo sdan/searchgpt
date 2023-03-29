@@ -18,9 +18,9 @@ const search = async (req: NextApiRequest, res: NextApiResponse) => {
     "\nSearch Results: \n";
 
   const response = await openai.createCompletion({
-    model: "text-davinci-003",
+    model: "gpt-3.5-turbo",
     prompt: prompting,
-    temperature: 0.5,
+    temperature: 0.7,
     max_tokens: 512,
     top_p: 1,
     frequency_penalty: 0.5,
