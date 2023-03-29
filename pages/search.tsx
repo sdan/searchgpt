@@ -38,7 +38,7 @@ export default function SearchPage() {
       });
 
       const data = await searchresultsapi.json();
-      setResults(data.text);
+      setResults(data);
     } catch (error) {
       setError(error);
     }
