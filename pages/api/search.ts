@@ -5,7 +5,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 const { Configuration, OpenAIApi, ChatCompletion } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY_BAD,
 });
 const openai = new OpenAIApi(configuration);
 

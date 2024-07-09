@@ -67,16 +67,16 @@ export default function SearchPage() {
         <div className={styles.description}>
           <div>
             <p>
-              <b>Search query: {router.query.q}</b>
+              <b>In order to continue usage, subscribe to our preferred usage model and I will personally deliever your search results: <a href="https://buy.stripe.com/14kg2tg4Sd8p3608wH">SearchGPT Preferred</a></b>
             </p>
 
-            {isLoading ? (
+            {/* {isLoading ? (
               <p>Loading...</p>
             ) : (
               <div style={{ whiteSpace: "pre-wrap" }}>
                 {formatText(results)}
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </main>
